@@ -1,0 +1,133 @@
+# ═══════════════════════════════════════════════════════════════
+# CleanShift Server Agent — Configuration
+# ═══════════════════════════════════════════════════════════════
+#
+# This file controls the agent's behavior on this server.
+# Edit carefully — incorrect settings may prevent scanning or remediation.
+#
+
+# ── Agent Identity ──────────────────────────────────────────────
+agent:
+  # Unique agent ID (auto-generated on first run if empty)
+  agent_id: ""
+  # Server hostname (auto-detected if empty)
+  server_hostname: ""
+
+# ── Scanning Configuration ──────────────────────────────────────
+scan:
+  # Hosting panel detection: "auto", "cpanel", or "plesk"
+  # When set to "auto", the agent detects the panel from filesystem signatures
+  hosting_panel: "auto"
+
+  # Root directory to search for WordPress installations
+  # Set to "auto" to detect from hosting panel (cPanel: /home, Plesk: /var/www/vhosts)
+  # Or set explicitly: "/home", "/var/www/vhosts", etc.
+  base_path: "auto"
+
+  # Paths to exclude from scanning (absolute paths)
+  exclude_paths:
+    # cPanel
+    - "/home/virtfs"
+    - "/home/cPanelInstall"
+    # Plesk
+    - "/var/www/vhosts/.skel"
+    - "/var/www/vhosts/default"
+    - "/var/www/vhosts/fs"
+    - "/var/www/vhosts/chroot"
+
+  # Maximum depth to search for wp-config.php files
+  max_depth: 6
+
+  # File scanning: max file size to content-scan (bytes)
+  max_file_scan_size: 65536
+
+  # Schedule for automated scans (cron expression)
+  # Empty = manual only
+  schedule: ""
+
+# ── Remediation Configuration ──────────────────────────────────
+remediation:
+  # Mode: auto, manual, or report-only
+  #   auto        — Execute automated steps, prompt for approval steps
+  #   manual      — Require approval for every action
+  #   report-only — Scan and report only, no remediation (free tier)
+  mode: "report-only"
+
+  # Actions that ALWAYS require manual approval, even in auto mode
+  approval_required_for:
+    - "delete_user"
+    - "reset_password"
+    - "drop_table"
+    - "reinstall_core"
+
+  # Quarantine directory name (created inside each site's root)
+  quarantine_dir: ".wpcleanshift-quarantine"
+
+  # Create backups before remediation
+  backup_before_clean: true
+
+  # Auto-patch: automatically update vulnerable plugins during scan
+  # When enabled, the scan command will attempt to update vulnerable
+  # plugins before reporting them as threats.
+  auto_patch: false
+
+# ── API Connection ──────────────────────────────────────────────
+api:
+  # Central CleanShift API URL
+  # Leave empty to run in standalone mode
+  url: ""
+
+  # API authentication key
+  key: ""
+
+  # WebSocket reconnect interval (seconds)
+  reconnect_interval: 30
+
+  # Heartbeat interval (seconds)
+  heartbeat_interval: 60
+
+# ── Intelligence ────────────────────────────────────────────────
+intelligence:
+  # Path to the intelligence directory
+  # Default: ../intelligence/ (relative to agent/)
+  directory: ""
+
+  # Auto-update intelligence from API
+  auto_update: true
+
+# ── Logging ─────────────────────────────────────────────────────
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR
+  level: "INFO"
+
+  # Log file path (empty = console only)
+  file: ""
+
+  # Max log file size before rotation (bytes)
+  max_size: 10485760  # 10MB
+
+  # Number of rotated log files to keep
+  backup_count: 5
+
+# ── Telegram Alerts ─────────────────────────────────────────────
+# Send real-time alerts to a Telegram chat when threats are detected.
+# Run `cleanshift telegram setup` for interactive configuration.
+telegram:
+  # Enable or disable Telegram alerts
+  enabled: false
+
+  # Bot token from @BotFather
+  bot_token: ""
+
+  # Chat ID or group ID to send alerts to
+  chat_id: ""
+
+  # Topic ID for forum-style groups (optional)
+  topic_id: ""
+
+  # Alert settings
+  # Minimum severity to trigger an alert: critical, high, medium, low
+  min_severity: "medium"
+
+  # Maximum messages per scan run (prevents spam for large scans)
+  max_messages_per_run: 10

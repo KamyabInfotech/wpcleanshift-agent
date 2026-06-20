@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-06-18T17:36:37.687558+00:00",
+  "indicator_categories": 13,
+  "playbook_count": 11,
+  "yara_rule_count": 3,
+  "bundle_size_bytes": 205644
+}

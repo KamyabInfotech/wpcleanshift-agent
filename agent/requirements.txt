@@ -1,0 +1,13 @@
+# CleanShift Server Agent — Dependencies
+# Requires Python 3.7+
+pyyaml>=6.0.1
+pymysql>=1.1.0
+websockets>=12.0
+click>=8.1.7
+rich>=13.7.0
+httpx>=0.25.0
+requests>=2.31.0
+cryptography>=42.0.0
+
+# ── Optional (enhanced detection) ──────────────────────────
+# pip install yara-python    # YARA signature scanning (requires libyara C library)
