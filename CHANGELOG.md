@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.0-rc.450] — 2026-09-15
+
+### Sync
+- Tip VERSION pin to monorepo `1.0.0-rc.450` (branded Stage −1 next-action pay priority + package bake).
+
 ## [1.0.0-rc.434] — 2026-09-15
 
 ### Chore
