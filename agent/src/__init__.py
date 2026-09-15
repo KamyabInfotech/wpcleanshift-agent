@@ -9,5 +9,5 @@ Born from CVE-2024-28000 (LiteSpeed Cache) — a real-world incident
 that infected 30 of 34 WordPress sites on a shared server.
 """
 
-__version__ = "1.0.0-rc.471"
+__version__ = "1.0.0-rc.472"
 __author__ = "CleanShift"
