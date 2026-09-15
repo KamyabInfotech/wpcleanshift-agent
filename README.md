@@ -1,3 +1,7 @@
+# CleanShift Agent (packaging repo)
+
+> **Monorepo source of truth:** signed install packages are published from `KamyabInfotech/wpcleanshift` (`scripts/publish_agent_package.sh`). This repo's VERSION tracks the monorepo tip for packaging alignment (synced at `1.0.0-rc.394`).
+
 # CleanShift
 
 > AI-powered server security platform — scan, clean, harden, protect.
@@ -9,7 +13,7 @@ CleanShift is a server-level security system for cPanel/WHM and Plesk that does 
 - **Database-level malware scanning** — wp_options injections, rogue admins, SEO spam, attack markers
 - **AI-powered code analysis** — legit plugin vs backdoor, not just signature matching
 - **Cross-site correlation** — if one site is infected, check all sites on the server
-- **Automated remediation** — not just quarantine — full cleanup + hardening with rollback
+- **Operator-approved remediation** — backup → remediate → verify with rollback (not silent auto-clean)
 - **Real-time protection** — 7 PHP security guards that block attacks before they land
 - **Intelligence-driven playbooks** — CVE-specific automated cleanup procedures
 
