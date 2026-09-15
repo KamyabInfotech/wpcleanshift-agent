@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.0-rc.427] — 2026-09-15
+
+### Chore
+- Sync packaging VERSION to monorepo tip 1.0.0-rc.427 (marketing Protect-after-connect honesty).
+
 ## [1.0.0-rc.426] — 2026-09-15
 
 - Align packaging VERSION with monorepo tip `1.0.0-rc.426` (post-checkout Protect CTA honesty).
