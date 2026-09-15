@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.0-rc.424] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.424` (Sites empty + New Scan protect-gate).
+
 ## [1.0.0-rc.423] — 2026-09-15
 
 - Align packaging VERSION with monorepo tip `1.0.0-rc.423` (Overview Discover → Review Sites).
