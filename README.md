@@ -1,6 +1,6 @@
 # CleanShift Agent (packaging repo)
 
-> **Monorepo source of truth:** signed install packages are published from `KamyabInfotech/wpcleanshift` (`scripts/publish_agent_package.sh`). This repo's VERSION and `agent/src/__init__.py` `__version__` track the monorepo tip for packaging alignment (synced at `1.0.0-rc.473`). Full tree sync remains deferred.
+> **Monorepo source of truth:** signed install packages are published from `KamyabInfotech/wpcleanshift` (`scripts/publish_agent_package.sh`). This repo's VERSION and `agent/src/__init__.py` `__version__` track the monorepo tip for packaging alignment (synced at `1.0.0-rc.474`). Full tree sync remains deferred.
 
 # CleanShift
 
