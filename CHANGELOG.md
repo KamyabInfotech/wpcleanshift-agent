@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.0-rc.420] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.420` (connect bootstrap discover-only honesty).
+
 ## [1.0.0-rc.402] — 2026-09-15
 
 - Align packaging VERSION with monorepo tip `1.0.0-rc.402`.
