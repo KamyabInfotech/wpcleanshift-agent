@@ -1,9 +1,9 @@
 # Changelog
 
-## [1.0.0-rc.429] — 2026-09-15
+## [1.0.0-rc.430] — 2026-09-15
 
 ### Chore
-- Sync packaging VERSION to monorepo tip 1.0.0-rc.429 (marketing Protect-after-connect honesty).
+- Sync packaging VERSION to monorepo tip 1.0.0-rc.430 (marketing Protect-after-connect honesty).
 
 ## [1.0.0-rc.426] — 2026-09-15
 
