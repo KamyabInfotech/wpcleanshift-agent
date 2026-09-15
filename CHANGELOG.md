@@ -1,4 +1,4 @@
-## 1.0.0-rc.477
+## 1.0.0-rc.478
 
 - Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
 
