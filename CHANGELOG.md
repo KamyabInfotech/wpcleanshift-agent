@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.0-rc.426] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.426` (post-checkout Protect CTA honesty).
+
 ## [1.0.0-rc.425] — 2026-09-15
 
 - Align packaging VERSION with monorepo tip `1.0.0-rc.425` (schedule/threat Protect-link honesty).
