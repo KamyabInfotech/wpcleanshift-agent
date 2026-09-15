@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.0-rc.451] — 2026-09-15
+
+### Sync
+- Tip VERSION pin to monorepo `1.0.0-rc.451` (pay-secret apply helper + branded SMTP honesty).
+
 ## [1.0.0-rc.450] — 2026-09-15
 
 ### Sync
