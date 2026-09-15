@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.0-rc.425] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.425` (schedule/threat Protect-link honesty).
+
 ## [1.0.0-rc.424] — 2026-09-15
 
 - Align packaging VERSION with monorepo tip `1.0.0-rc.424` (Sites empty + New Scan protect-gate).
