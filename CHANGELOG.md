@@ -1,8 +1,8 @@
 # Changelog
 
-## [1.0.0-rc.394] — 2026-09-15
+## [1.0.0-rc.395] — 2026-09-15
 
-- Align VERSION with monorepo tip `1.0.0-rc.394`.
+- Align VERSION with monorepo tip `1.0.0-rc.395`.
 - README honesty: operator-approved remediation (not silent auto-clean); monorepo is source of truth for signed packages.
 
 Shift — Changelog
