@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.0-rc.422] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.422` (post-connect Protect handoff).
+
 ## [1.0.0-rc.421] — 2026-09-15
 
 - Align packaging VERSION with monorepo tip `1.0.0-rc.421` (post-connect Protect-path + install docs honesty).
