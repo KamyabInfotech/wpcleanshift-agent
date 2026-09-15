@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.0-rc.402] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.402`.
+
 ## [1.0.0-rc.401] — 2026-09-15
 
 - Align packaging VERSION with monorepo tip `1.0.0-rc.401`.
