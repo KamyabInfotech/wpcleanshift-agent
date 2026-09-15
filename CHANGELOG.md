@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.0-rc.399] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.399`.
+
 ## [1.0.0-rc.398] — 2026-09-15
 
 - Align VERSION with monorepo tip `1.0.0-rc.398` (packaging VERSION sync; monorepo remains signed-package SoT).
