@@ -1,3 +1,7 @@
+## 1.0.0-rc.517
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip.
+
 ## 1.0.0-rc.516
 
 - Tip VERSION honesty sync with wpcleanshift go-live tip.
