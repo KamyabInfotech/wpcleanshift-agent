@@ -1,3 +1,8 @@
+## [1.0.0-rc.556] — 2026-09-16
+
+### Changed
+- Packaging tip pin to match wpcleanshift `1.0.0-rc.556`.
+
 # CleanShift — Changelog
 
 All notable changes to this project will be documented in this file.
