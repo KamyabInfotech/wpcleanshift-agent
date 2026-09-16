@@ -1,4 +1,170 @@
-# CleanShift — Changelog
+## 1.0.0-rc.517
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip.
+
+## 1.0.0-rc.516
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip.
+
+## 1.0.0-rc.515
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip.
+
+## 1.0.0-rc.514
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip.
+
+## 1.0.0-rc.513
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.512
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.511
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.510
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.509
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.508
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.507
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.506
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.505
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.504
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.481
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.473
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.472
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.471
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.470
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime `__version__` + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.469
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (runtime  + README pin; commercial Pay still operator-blocked).
+
+## 1.0.0-rc.463
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (commercial Pay still operator-blocked).
+
+## 1.0.0-rc.462
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (commercial Pay still operator-blocked).
+
+## 1.0.0-rc.461
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (commercial Pay still operator-blocked).
+
+## 1.0.0-rc.460
+
+- Tip VERSION honesty sync with wpcleanshift go-live tip (commercial Pay still operator-blocked).
+
+# Changelog
+
+## [1.0.0-rc.451] — 2026-09-15
+
+### Sync
+- Tip VERSION pin to monorepo `1.0.0-rc.451` (pay-secret apply helper + branded SMTP honesty).
+
+## [1.0.0-rc.450] — 2026-09-15
+
+### Sync
+- Tip VERSION pin to monorepo `1.0.0-rc.450` (branded Stage −1 next-action pay priority + package bake).
+
+## [1.0.0-rc.434] — 2026-09-15
+
+### Chore
+- Sync packaging VERSION to monorepo tip 1.0.0-rc.434 (marketing Protect-after-connect honesty).
+
+## [1.0.0-rc.426] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.426` (post-checkout Protect CTA honesty).
+
+## [1.0.0-rc.425] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.425` (schedule/threat Protect-link honesty).
+
+## [1.0.0-rc.424] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.424` (Sites empty + New Scan protect-gate).
+
+## [1.0.0-rc.423] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.423` (Overview Discover → Review Sites).
+
+## [1.0.0-rc.422] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.422` (post-connect Protect handoff).
+
+## [1.0.0-rc.421] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.421` (post-connect Protect-path + install docs honesty).
+
+## [1.0.0-rc.420] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.420` (connect bootstrap discover-only honesty).
+
+## [1.0.0-rc.402] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.402`.
+
+## [1.0.0-rc.401] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.401`.
+
+## [1.0.0-rc.400] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.400`.
+
+## [1.0.0-rc.399] — 2026-09-15
+
+- Align packaging VERSION with monorepo tip `1.0.0-rc.399`.
+
+## [1.0.0-rc.398] — 2026-09-15
+
+- Align VERSION with monorepo tip `1.0.0-rc.398` (packaging VERSION sync; monorepo remains signed-package SoT).
+
+## [1.0.0-rc.395] — 2026-09-15
+
+- Align VERSION with monorepo tip `1.0.0-rc.395`.
+- README honesty: operator-approved remediation (not silent auto-clean); monorepo is source of truth for signed packages.
+
+Shift — Changelog
 
 All notable changes to this project will be documented in this file.
 
