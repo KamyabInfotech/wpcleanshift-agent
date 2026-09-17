@@ -2231,6 +2231,31 @@ def restore(ctx: click.Context, backup_id: Optional[str], list_backups: bool, dr
     print_banner()
     config = ctx.obj["config"]
 
+    # rc.633: destructive restore requires can_remediate (--list / --dry-run stay free-tier)
+    if not list_backups and not dry_run:
+        try:
+            from .license import LicenseValidator, FeatureGatedError
+            validator = LicenseValidator.from_config(config)
+            if not validator.can_remediate():
+                console.print(
+                    "[red]Restore is not available on your current plan.[/red]\n"
+                    "[dim]Upgrade or use an active trial. Listing / dry-run still allowed: "
+                    "cleanshift restore --list | --dry-run …[/dim]"
+                )
+                sys.exit(EXIT_ERROR)
+        except FeatureGatedError as exc:
+            console.print(f"[red]{exc}[/red]")
+            sys.exit(EXIT_ERROR)
+        except SystemExit:
+            raise
+        except Exception as exc:
+            logger.error("License check failed; refusing restore: %s", exc)
+            console.print(
+                "[red]Could not verify remediation entitlement — refusing restore.[/red]\n"
+                "[dim]Use --list / --dry-run, or check API connectivity / license key.[/dim]"
+            )
+            sys.exit(EXIT_ERROR)
+
     # Discover all backup directories across known base paths
     base_path = config.get("scan", {}).get("base_path", "auto")
     if base_path == "auto":
