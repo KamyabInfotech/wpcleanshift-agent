@@ -2872,8 +2872,38 @@ def harden(
 
     Converts Guard BLOCKED events into .htaccess or Nginx deny rules
     to stop attacks before PHP boots.
+
+    Dry-run / nginx print-only remain free-tier; writing .htaccess requires
+    can_remediate (rc.633).
     """
     console = Console()
+    config = ctx.obj.get("config", {})
+
+    # rc.633: mutating .htaccess requires remediation entitlement (dry-run OK)
+    mutating = disable or (not dry_run and output_format in ("htaccess", "both"))
+    if mutating:
+        try:
+            from .license import LicenseValidator, FeatureGatedError
+            validator = LicenseValidator.from_config(config)
+            if not validator.can_remediate():
+                console.print(
+                    "[red]Hardening writes are not available on your current plan.[/red]\n"
+                    "[dim]Upgrade or use an active trial. Preview is still allowed: "
+                    "cleanshift harden --site … --dry-run[/dim]"
+                )
+                sys.exit(EXIT_ERROR)
+        except FeatureGatedError as exc:
+            console.print(f"[red]{exc}[/red]")
+            sys.exit(EXIT_ERROR)
+        except SystemExit:
+            raise
+        except Exception as exc:
+            logger.error("License check failed; refusing harden write: %s", exc)
+            console.print(
+                "[red]Could not verify remediation entitlement — refusing harden write.[/red]\n"
+                "[dim]Use --dry-run, or check API connectivity / license key.[/dim]"
+            )
+            sys.exit(EXIT_ERROR)
 
     from .htaccess_hardener import HtaccessHardener
 
