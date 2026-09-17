@@ -563,8 +563,23 @@ def scan(
     if result is None:
         sys.exit(EXIT_ERROR)
 
-    # Auto-patch vulnerable plugins if requested
+    # Auto-patch vulnerable plugins if requested (rc.632: same entitlement as destructive clean)
     auto_patch_active = auto_patch or config.get("remediation", {}).get("auto_patch", False)
+    if auto_patch_active and result and result.threats:
+        try:
+            from .license import LicenseValidator
+            if not LicenseValidator.from_config(config).can_remediate():
+                console.print(
+                    "[yellow]Auto-patch skipped — not entitled on current plan "
+                    "(scan results are still available).[/yellow]"
+                )
+                auto_patch_active = False
+        except Exception as exc:
+            logging.getLogger("cleanshift.agent").warning("Auto-patch license check failed — skipping patch: %s", exc)
+            console.print(
+                "[yellow]Auto-patch skipped — could not verify remediation entitlement.[/yellow]"
+            )
+            auto_patch_active = False
     if auto_patch_active and result and result.threats:
         vuln_count = sum(1 for t in result.threats if t.threat_type == ThreatType.VULNERABLE_PLUGIN)
         if vuln_count > 0:
